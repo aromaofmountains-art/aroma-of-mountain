@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Collections | Aroma of Mountains</title>
+<meta name="description" content="Shop perfumes for men, women and unisex. 50ml bottles and tester boxes, delivered in Pakistan.">
+<meta name="theme-color" content="#f1eee8">
+<script>
+(function(){
+  var dark=false;
+  try{
+    var s=localStorage.getItem('aroma_theme');
+    dark = s ? s==='dark' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+  }catch(e){}
+  if(dark) document.documentElement.classList.add('dark-mode');
+  var m=document.querySelector('meta[name="theme-color"]');
+  if(m) m.setAttribute('content', dark ? '#120c0b' : '#f1eee8');
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+
+</head>
+<body class="">
+<script src="layout.js"></script>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1>Explore by collection</h1>
+    <p>Three collections, one for every kind of person. Every fragrance is available as a 50ml bottle or a Rs 1,500 tester box.</p>
+  </div>
+
+  <div class="tabs-bar">
+    <div class="wrap">
+      <div class="tabs" role="tablist" aria-label="Collections">
+        <button class="tab" role="tab" id="tab-men" aria-controls="panel-men" aria-selected="true" type="button">Men<small>4</small></button>
+        <button class="tab" role="tab" id="tab-women" aria-controls="panel-women" aria-selected="false" type="button">Women<small>2</small></button>
+        <button class="tab" role="tab" id="tab-unisex" aria-controls="panel-unisex" aria-selected="false" type="button">Unisex<small>2</small></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="panel active" id="panel-men" role="tabpanel" aria-labelledby="tab-men">
+      <div class="grid">
+        <article class="product">
+          <div class="product-img"><img src="pics/5 pic new.jpeg" alt="Sport Vibe perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Sport Vibe</h3>
+            <p class="product-note">Impression of Janan Sport</p>
+            <p class="product-price">Rs 1,900</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="sport-vibe-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="sport-vibe-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img"><img src="pics/1 pic new.jpeg" alt="Blue Essence perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Blue Essence</h3>
+            <p class="product-note">Fresh. Clean. Confident.</p>
+            <p class="product-price">Rs 2,000</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="blue-essence-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="blue-essence-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img"><span class="badge">New launch</span><img src="pics/Perfume_bottle_on_wood_surface_202608070134.jpeg" alt="The Gentlemen perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>The Gentlemen</h3>
+            <p class="product-note">Impression of Office For Men</p>
+            <p class="product-price">Rs 2,250</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="gentlemen-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="gentlemen-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img"><img src="pics/2 pic new.jpeg" alt="Ameer X perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Ameer X</h3>
+            <p class="product-note">Impression of Ameerul Oud</p>
+            <p class="product-price">Rs 1,950</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="ameer-x-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="ameer-x-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="panel" id="panel-women" role="tabpanel" aria-labelledby="tab-women">
+      <div class="grid">
+        <article class="product">
+          <div class="product-img"><img src="pics/Perfume_bottle_with_crimson_roses_202608070135.jpeg" alt="Pure Flora perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Pure Flora</h3>
+            <p class="product-note">Floral. Delicate. Timeless.</p>
+            <p class="product-price">Rs 1,850</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="pure-flora-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="pure-flora-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img"><span class="badge">New launch</span><img src="pics/Perfume_bottle_on_velvet_fabric_202608070134.jpeg" alt="Crystal Bloom perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Crystal Bloom</h3>
+            <p class="product-note">Bright Crystal impression</p>
+            <p class="product-price">Rs 2,100</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="crystal-bloom-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="crystal-bloom-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="panel" id="panel-unisex" role="tabpanel" aria-labelledby="tab-unisex">
+      <div class="grid">
+        <article class="product">
+          <div class="product-img"><img src="pics/4 pic new.jpeg" alt="Marine Water perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Marine Water</h3>
+            <p class="product-note">Crisp. Aquatic. Serene.</p>
+            <p class="product-price">Rs 1,850</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="marine-water-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="marine-water-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img"><img src="pics/6 pic new.jpeg" alt="Ocean Drift perfume bottle" loading="lazy" width="512" height="512"></div>
+          <div class="product-body">
+            <h3>Ocean Drift</h3>
+            <p class="product-note">Cool. Airy. Free.</p>
+            <p class="product-price">Rs 2,500</p>
+            <div class="product-actions">
+              <button class="add-btn" type="button" data-add-to-cart="ocean-drift-50ml">Add to cart</button>
+              <button class="tester-btn" type="button" data-add-to-cart="ocean-drift-tester">+ Tester · Rs 1,500</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="cart.js"></script>
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.tab');
+  function show(name, push){
+    tabs.forEach(function(t){
+      var on = t.id === 'tab-' + name;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+    });
+    if(push){ try{ history.replaceState(null, '', '#' + name); }catch(e){} }
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ show(t.id.replace('tab-',''), true); });
+  });
+  function fromHash(){
+    var h = location.hash.replace('#','');
+    if(['men','women','unisex'].indexOf(h) > -1) show(h, false);
+  }
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>
+</body>
+</html>

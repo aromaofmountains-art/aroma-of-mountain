@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Aroma of Mountains</title>
+<meta name="description" content="The story behind Aroma Luxury: elegant, long-lasting fragrances made with care.">
+<meta name="theme-color" content="#f1eee8">
+<script>
+(function(){
+  var dark=false;
+  try{
+    var s=localStorage.getItem('aroma_theme');
+    dark = s ? s==='dark' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+  }catch(e){}
+  if(dark) document.documentElement.classList.add('dark-mode');
+  var m=document.querySelector('meta[name="theme-color"]');
+  if(m) m.setAttribute('content', dark ? '#120c0b' : '#f1eee8');
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+
+</head>
+<body class="">
+<script src="layout.js"></script>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1>Every fragrance has a story</h1>
+    <p>At Aroma Luxury, we believe perfume is more than a scent, it is an identity. Crafted with elegance and inspired by timeless sophistication, our fragrances are made to leave unforgettable impressions.</p>
+  </div>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="split-img"><img src="pics/6 pic new.jpeg" alt="Aroma of Mountains bottle resting on red velvet" loading="lazy" width="640" height="640"></div>
+      <div class="split-text">
+        <h2 class="display">Our journey</h2>
+        <p>Founded with passion and creativity, Aroma Luxury was created to redefine modern fragrance experiences. Every bottle reflects elegance, confidence, and premium craftsmanship.</p>
+        <p>We blend rare ingredients with artistic vision to create perfumes that feel luxurious and unforgettable. From everyday sophistication to bold evening statements, our scents are made for every personality.</p>
+        <p>Our mission is simple: to bring timeless luxury into every moment through fragrance.</p>
+        <a class="btn btn-primary" href="collection.html">Explore the collection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Why choose us</h2></div>
+      <div class="values">
+        <div class="value"><h3>Premium quality</h3><p>Made with carefully selected ingredients for a rich and luxurious fragrance experience.</p></div>
+        <div class="value"><h3>Elegant ingredients</h3><p>Inspired by nature and refined with sophistication to create unforgettable signature scents.</p></div>
+        <div class="value"><h3>Luxury design</h3><p>Every bottle is designed with modern elegance to match the beauty of the fragrance inside.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap"><p>&ldquo;Luxury is invisible until it becomes a fragrance.&rdquo;</p></div>
+  </section>
+</main>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
